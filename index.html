@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Objects Assignment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .section {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        input {
+            padding: 8px;
+            margin: 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="section">
+        <h2>Digital Library System</h2>
+        <div>
+            <input type="text" id="bookTitle" placeholder="Book Title">
+            <input type="text" id="bookAuthor" placeholder="Author">
+            <input type="number" id="bookPages" placeholder="Pages">
+            <button onclick="addBook()">Add Book</button>
+        </div>
+        <div>
+            <input type="text" id="searchTerm" placeholder="Search by title or author">
+            <button onclick="searchBooks()">Search</button>
+        </div>
+        <div>
+            <button onclick="filterLongBooks()">Show Books > 100 Pages</button>
+            <button onclick="displayFormattedBooks()">Show Formatted Books</button>
+        </div>
+        <div id="bookList"></div>
+    </div>
+
+    <div class="section">
+        <h2>Banking Application</h2>
+        <div>
+            <input type="text" id="accountOwner" placeholder="Account Owner">
+            <input type="number" id="initialBalance" placeholder="Initial Balance">
+            <button onclick="createAccount()">Create Account</button>
+        </div>
+        <div>
+            <input type="number" id="accountNumber" placeholder="Account Number">
+            <input type="number" id="amount" placeholder="Amount">
+            <button onclick="deposit()">Deposit</button>
+            <button onclick="withdraw()">Withdraw</button>
+        </div>
+        <div>
+            <input type="number" id="interestRate" placeholder="Interest Rate (%)">
+            <input type="number" id="years" placeholder="Years">
+            <button onclick="calculateInterest()">Calculate Interest</button>
+        </div>
+        <div id="accountInfo"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
